@@ -44,10 +44,9 @@ p{
     margin:5px 0;
 }
 /*======form inputs=====*/
-fieldset:first-of-type + label{
+/* fieldset:first-of-type + label{
   display: block;
-
-}
+} */
 legend{
     font-size:2rem;
 }
@@ -81,9 +80,9 @@ input::placeholder{
 }
 
 /*======helper classes=====*/
-.display-b{
+/* .display-b{
     display:block
-}
+} */
 .my-10{
   margin:10px 0;
 }
@@ -92,4 +91,26 @@ input::placeholder{
 }
 .white{
     color:#fff;
+}
+@media screen and (min-width: 760px){
+    .body{
+    width:80%;
+    }
+    label{
+        width:100px;
+        display: inline-block;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="phone"], 
+    textarea, select {
+    width: 80%;
+    float: right;
+    }
+    .clearfix::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
