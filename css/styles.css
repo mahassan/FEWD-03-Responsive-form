@@ -1,0 +1,95 @@
+/*======Global Styles=====*/
+*{
+    margin:0;
+}
+h2:first-child,
+h2 + p{
+    text-align: center;
+}
+hr:first-of-type{
+    border-top:10px solid #2E3943; 
+    border-bottom:1px solid #2E3943;
+    padding-bottom:10px;
+    border-left:none;
+    border-right:none;
+    margin-bottom:50px;
+}
+hr:not(:first-child){
+    margin:30px 0;
+}
+button{
+    background:#4EBBB8;
+    display: block;
+    color:white;
+    padding:50px;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: 100%;
+}
+.header{
+    background:#2E3943;
+    text-align: center;
+}
+.header,
+.heading{
+    padding:25px 0;
+}
+
+.body{
+    width: 300px;
+    margin:10px auto;
+}
+p{
+    color:#C8C7C8;
+    margin:5px 0;
+}
+/*======form inputs=====*/
+fieldset:first-of-type + label{
+  display: block;
+
+}
+legend{
+    font-size:2rem;
+}
+label{
+    font-size:1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea,
+select{
+    color:#85939F;
+    border:0;
+    background:#EFF0F1;
+    height:50px;
+    border-radius: 2px;
+    width: 100%;
+}
+input[id="zip-code"]{
+    width:50%;
+}
+textarea{
+    height:auto;
+}
+input:focus{
+    border:1px solid #2E3943;
+}
+input::placeholder{
+  font-size:0.7rem;
+  float: right;
+}
+
+/*======helper classes=====*/
+.display-b{
+    display:block
+}
+.my-10{
+  margin:10px 0;
+}
+.b0{
+    border:0;
+}
+.white{
+    color:#fff;
+}

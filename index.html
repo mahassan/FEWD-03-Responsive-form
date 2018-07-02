@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Code Review : Responsive Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="header white">
+        <h1>The Code Review</h1>
+    </div>
+    <form action="">
+        <div class="body">
+            <div class="heading">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+            <hr>
+            <fieldset class="b0">
+                <legend>Contact Information</legend>
+                <div class="control-form my-10">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="Required">
+                </div>
+                <div class="control-form my-10">
+                <label for="email-address">Email Address</label>
+                <input type="email" id="email-address" name="email-address" required placeholder="Required">
+                </div>
+                <div class="control-form my-10">
+                <label for="phone-number">Phone Number</label>
+                <input type="phone" id="phone-number" name="phone-number">
+                </div>
+                <div class="control-form my-10">
+                <label for="st-address">Street Address</label>
+                <input type="text" id="st-address" name="st-address">
+                </div>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+                <div class="control-form my-10">
+                <label for="state" id="state">State</label>
+                <select name="state" id="state">
+                    <option value="fl">Florida</option>
+                </select>
+                </div>
+                <div class="control-form my-10">
+                <label for="zip-code" id="zip-code">Zip Code</label>
+                <input type="text" id="zip-code">
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="b0">
+                <legend>Newsletter</legend>
+                <p>Select the newsletter you would like to recieve</p>
+                <div class="control-box my-10">
+                    <input type="checkbox" id="html-news" name="newsletter">
+                    <label for="html-news">HTML News</label>
+                </div>
+                <div class="control-box my-10">
+                    <input type="checkbox" id="css-news" name="newsletter">
+                    <label for="css-news">CSS News</label>
+                </div>
+                <div class="control-box my-10">
+                    <input type="checkbox" id="js-news" name="newsletter">
+                    <label for="js-news">Javascript News</label>
+                </div>
+                <p>Newsletter format</p>
+                <div class="control-box my-10">
+                    <input type="radio" name="format" id="html">
+                    <label for="html">HTML</label>
+                </div>
+
+                <div class="control-box my-10">
+                    <input type="radio" name="format" id="plain-text">
+                    <label for="plain-text">Plain Text</label>
+                </div>
+                <div class="control-box my-10">
+                    <label for="other-topics">Other topics you'd like to hear about</label>
+                    <textarea class="display-b" name="other-topics" id="" cols="30" rows="10">
+                    </textarea>
+                </div>
+                <button type="submit">Sign up</button>
+            </fieldset>
+        </div>
+    </form>
+</body>
+
+</html>
