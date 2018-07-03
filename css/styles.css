@@ -118,7 +118,7 @@ input::placeholder{
     }
     input[type="text"], 
     input[type="email"], 
-    input[type="phone"], 
+    input[type="tel"], 
     textarea, select {
         flex-grow: 1;
     }
