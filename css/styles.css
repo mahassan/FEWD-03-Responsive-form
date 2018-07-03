@@ -61,12 +61,16 @@ select{
     border-radius: 2px;
     padding:5px;
 }
+input[id="zip-code"]{
+   width:40%;
+}
 input::placeholder{
   text-align: right;
 }
 textarea{
     display: block;
     width: 100%;
+    box-sizing : border-box;
 }
 textarea{
     height:auto;
