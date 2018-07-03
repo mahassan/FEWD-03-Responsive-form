@@ -1,6 +1,10 @@
 /*======Global Styles=====*/
-*{
+*,fieldset{
     margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Merriweather', serif;
 }
 h2:first-child,
 h2 + p{
@@ -34,6 +38,9 @@ p{
     color:#C8C7C8;
     margin:5px 0;
 }
+.footer{
+text-align: center;
+}
 /*======form inputs=====*/
 label{
     color:#C8C8CA;
@@ -48,6 +55,7 @@ legend{
 input[type="text"],
 input[type="email"],
 input[type="phone"],
+input[type="tel"],
 textarea,
 select{
     color:#85939F;
@@ -56,6 +64,9 @@ select{
     height:50px;
     border-radius: 2px;
     padding:5px;
+}
+input[type="tel"]{
+    width: 100%;
 }
 input::placeholder{
   text-align: right;
