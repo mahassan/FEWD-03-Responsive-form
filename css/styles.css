@@ -17,15 +17,6 @@ hr:first-of-type{
 hr:not(:first-child){
     margin:30px 0;
 }
-button{
-    background:#4EBBB8;
-    display: block;
-    color:white;
-    padding:50px;
-    border-radius: 5px;
-    font-size: 2rem;
-    width: 100%;
-}
 .header{
     background:#2E3943;
     text-align: center;
@@ -35,7 +26,7 @@ button{
     padding:25px 0;
 }
 
-.body{
+.main{
     width: 300px;
     margin:10px auto;
 }
@@ -44,14 +35,15 @@ p{
     margin:5px 0;
 }
 /*======form inputs=====*/
-/* fieldset:first-of-type + label{
-  display: block;
-} */
+label{
+    color:#C8C8CA;
+}
 legend{
     font-size:2rem;
 }
-label{
-    font-size:1rem;
+.control-form{
+    display: flex;
+    flex-direction: column;
 }
 input[type="text"],
 input[type="email"],
@@ -63,26 +55,38 @@ select{
     background:#EFF0F1;
     height:50px;
     border-radius: 2px;
-    width: 100%;
+    padding:5px;
 }
-input[id="zip-code"]{
-    width:50%;
+input::placeholder{
+  text-align: right;
+}
+textarea{
+    display: block;
+    width: 100%;
 }
 textarea{
     height:auto;
+}
+input[type="checkbox"],
+input[type="radio"]{
+    margin-right:10px;
+}
+button{
+    background:#4EBBB8;
+    display: block;
+    color:white;
+    padding:50px;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: 100%;
 }
 input:focus{
     border:1px solid #2E3943;
 }
 input::placeholder{
-  font-size:0.7rem;
-  float: right;
+  font-style: italic;
 }
-
 /*======helper classes=====*/
-/* .display-b{
-    display:block
-} */
 .my-10{
   margin:10px 0;
 }
@@ -93,24 +97,24 @@ input::placeholder{
     color:#fff;
 }
 @media screen and (min-width: 760px){
-    .body{
-    width:80%;
+    /* for desktops*/
+    .control-form{
+        display: flex;
+        flex-direction: row
     }
     label{
-        width:100px;
-        display: inline-block;
+        flex-basis: 150px ;
     }
-
+    .main{
+    width:80%;
+    }
     input[type="text"], 
     input[type="email"], 
     input[type="phone"], 
     textarea, select {
-    width: 80%;
-    float: right;
+        flex-grow: 1;
     }
-    .clearfix::after{
-        content: "";
-        display: table;
-        clear: both;
+    .control-form  textarea{
+       flex-basis: 100%;
     }
 }
